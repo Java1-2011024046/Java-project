@@ -28,19 +28,19 @@ class RadioButtonFrame extends JFrame implements ActionListener{
 		add(topPanel,BorderLayout.NORTH);
 		
 		sizePanel = new JPanel();
-		small=new JRadioButton("small Size");
+		small=new JRadioButton("small Size");//라디오 버튼 생성
 		medium=new JRadioButton("Medium Size");
 		large=new JRadioButton("Large Size");
 		
 		ButtonGroup size = new ButtonGroup();
-		size.add(small);
+		size.add(small);//버튼 그룹 생성하고 라디오 버튼 추가한다.
 		size.add(medium);
 		size.add(large);
 		
-		small.addActionListener(this);
+		small.addActionListener(this);//radio 버튼에 액션 리스너 등록한다.
 		medium.addActionListener(this);
 		large.addActionListener(this);
-		sizePanel.add(small);
+		sizePanel.add(small);//버튼 그룹 생성하고 라디오 버튼 추가.
 		sizePanel.add(medium);
 		sizePanel.add(large);
 		add(sizePanel,BorderLayout.CENTER);

@@ -20,10 +20,10 @@ class P573 extends JFrame implements ActionListener {
 		 textField = new JTextField(30);
 		 textField.addActionListener(this);
 		 
-		 textArea = new JTextArea(15,30);
+		 textArea = new JTextArea(15,30);//텍스트영역을 생성하고
 		 textArea.setEditable(false);
 		
-		 JScrollPane scrollPane = new JScrollPane(textArea);
+		 JScrollPane scrollPane = new JScrollPane(textArea);//이게 스크롤 생성하는거.
 	     add(scrollPane,BorderLayout.CENTER);
 		 add(textField,BorderLayout.NORTH);
 		 //add(textArea,BorderLayout.CENTER); scollpane에 textArea가 붙어있기때문에 얘를 두번 하면 안된다.
